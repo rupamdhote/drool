@@ -1,0 +1,20 @@
+pipeline {
+    agent any 
+    stages {
+        stage('git clone') { 
+            steps {
+                git branch: 'main', url: 'https://github.com/rupamdhote/drool.git'
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo 'successfuklt deployed build stage' 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                sh 'mkdir rosn' 
+            }
+        }
+    }
+}
