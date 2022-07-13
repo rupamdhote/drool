@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git pull') { 
             steps {
-                sh 'git pull origin main'
+               git branch: 'main', url: 'https://github.com/rupamdhote/drool.git' 
         
             }
         }
