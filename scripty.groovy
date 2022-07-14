@@ -1,4 +1,4 @@
-job('example-1') {
+job('example-2') {
     scm {
         git {
             remote {
