@@ -17,7 +17,7 @@ pipeline {
         stage('tomcat install') { 
             steps {
                 sh 'sudo wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.81/bin/apache-tomcat-8.5.81.tar.gz'
-                sh 'tar -xvzf /home/ubuntu/workspace/pipeline1/apache-tomcat-8.5.81.tar.gz -C /mnt'
+                sh 'sudo tar -xvzf /home/ubuntu/workspace/pipeline1/apache-tomcat-8.5.81.tar.gz -C /mnt'
                 sh 'sudo /mnt/apache-tomcat-8.5.81/bin/catalina.sh start' 
             }
         }
