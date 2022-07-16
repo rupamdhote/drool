@@ -12,7 +12,6 @@ pipeline {
                 sh 'sudo apt update'
                 sh 'sudo apt install maven -y'
                 sh 'sudo mvn clean package' 
-                sh 'sudo apt package'
             }
         }
         stage('tomcat install') { 
