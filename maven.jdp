@@ -1,5 +1,5 @@
 pipeline {
-    agent {lable1 'any'} 
+    agent {'any'} 
     stages {
         stage('git pull') { 
             steps {
